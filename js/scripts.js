@@ -56,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function() {
 		for (let i = 0; i < btnVideo.length; i++) {
 			btnVideo[i
 			  ].addEventListener("click", function (e) {
-			  console.log('test')
 			  const videoURL = this.parentNode.dataset.video;
 			  this.parentNode.classList.add("active");
 			  this.parentNode.innerHTML += `<iframe width="100%" height="100%" src="videoURL" frameborder="0" allowfullscreen></iframe>`;//videoURL в фигурные скобки с долларом
@@ -141,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function() {
 					let tabsNavElementActive = tabsNavElements[iElements].dataset.tab
 					for (j = 0; j < tabsBlocks.length; j++) {
 						if (tabsBlocks[j].dataset.tab.toString().indexOf(tabsNavElementActive) > -1) {
-							console.log(tabsBlocks[j].dataset.tab.toString().indexOf(tabsNavElementActive))
+							
 							tabsBlocks[j].classList.add('active')
 						}
 					}
