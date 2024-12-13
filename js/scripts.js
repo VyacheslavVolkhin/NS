@@ -1,5 +1,26 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+
+
+	
+
+	//form sender
+	let forms = document.querySelectorAll('.frm-popup');
+    
+    forms.forEach(function(form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            
+            let successMessage = this.querySelector('.frm-popup-succefull');
+            if (successMessage) {
+                this.classList.add('active');
+            }
+            
+            return false;
+        });
+    });
+	
+	
 	//form input clear
 	const inputFields = document.querySelectorAll(".frm-field-input-action .form-input");
 	const clearButtons = document.querySelectorAll(".button-field-clear");
@@ -171,6 +192,21 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 		})
 	}
+	let buttonsTglOne = document.querySelectorAll('.js-btn-tgl-one');
+	buttonsTglOne.forEach(function(button) {
+		button.addEventListener('click', function(e) {
+			e.preventDefault();
+			let row = this.closest('.row');
+			row.querySelectorAll('.js-btn-tgl-one').forEach(function(btn) {
+				btn.classList.remove('active');
+			});
+			row.querySelectorAll('.js-btn-tgl-one').forEach(function(btn) {
+				btn.classList.remove('active');
+			});
+			this.classList.add('active');
+			return false;
+		});
+	});
 
 	//fancybox
 	Fancybox.bind("[data-fancybox]", {

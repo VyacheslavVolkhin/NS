@@ -435,22 +435,22 @@
                         <h2 class="page-main-title">НейроМейкер <br><span class="title-att-gr">поддерживается</span> в:</h2>
                     </div>
                     <div class="tabs-wrap">
-                        <div class="tabs-box">
+                        <div class="tabs-box js-tabs-nav">
                             <ul class="menu">
                                 <li>
-                                    <a href="" class="btn button-medium button-tab-main active">
+                                    <a href="" class="btn button-medium button-tab-main active" data-tab="logos01">
                                         <div class="button-title">Маркетплейсах</div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="btn button-medium button-tab-main">
+                                    <a href="" class="btn button-medium button-tab-main" data-tab="logos02">
                                         <div class="button-title">CRM, CMS, CMF</div>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row js-tab-block" data-tab="logos01">
                         <!--item wrap-->
                         <div class="col col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
                             <div class="item-tile-logo">
@@ -469,6 +469,67 @@
                             </div>
                         </div>
                         <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="col col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <div class="item-tile-logo">
+                                <div class="tile-photo photo-cover">
+                                    <img src="./img/icons/logo03.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="col col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <div class="item-tile-logo">
+                                <div class="tile-photo photo-cover">
+                                    <img src="./img/icons/logo04.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="col col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <div class="item-tile-logo">
+                                <div class="tile-photo photo-cover">
+                                    <img src="./img/icons/logo05.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="col col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <div class="item-tile-logo">
+                                <div class="tile-photo photo-cover">
+                                    <img src="./img/icons/logo06.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="col col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <div class="item-tile-logo">
+                                <div class="tile-photo photo-cover">
+                                    <img src="./img/icons/logo07.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="col col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <div class="item-tile-logo">
+                                <div class="tile-title">Любой маркетплейс</div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="col col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <div class="item-tile-logo">
+                                <div class="tile-title">Интернет-магазины</div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                    </div>
+                    <div class="row js-tab-block" data-tab="logos02">
                         <!--item wrap-->
                         <div class="col col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
                             <div class="item-tile-logo">
@@ -780,7 +841,7 @@
                             </div>
                             <div class="slider-pagination slider-tiles-pagination elm-hidden-mobile"></div>
                             <div class="slider-action-wrap">
-                                <a href="" class="btn button-dark button-medium">
+                                <a href="" class="btn button-dark button-medium js-popup-open" data-popup="popup-subscribe">
                                     <div class="button-title">Подписаться на рассылку</div>
                                 </a>
                             </div>
@@ -800,9 +861,9 @@
                     <div class="row">
                         <!-- item -->
                         <div class="col col-12">
-                            <div class="item-tile-faq js-popup-wrap no-close">
-                                <div class="tile-button js-btn-popup-toggle">Что мне даст использование НейроМейкер?</div>
-                                <div class="tile-content-block js-popup-block">
+                            <div class="item-tile-faq">
+                                <div class="tile-button js-btn-tgl-one">Что мне даст использование НейроМейкер?</div>
+                                <div class="tile-content-block">
                                     <p>Вы можете воспользоваться бесплатным тестовым периодом на 10 дней с момента запуска проекта в панели с лимитом на 1 услугу/товар. Регистрация в панели не активирует автоматически тестовый период, только запуск проекта. </p>
                                 </div>
                             </div>
@@ -810,9 +871,9 @@
                         <!-- /item -->
                         <!-- item -->
                         <div class="col col-12">
-                            <div class="item-tile-faq js-popup-wrap no-close">
-                                <div class="tile-button js-btn-popup-toggle active">Есть ли возможность оценить НейроМейкер попробовав бесплатно?</div>
-                                <div class="tile-content-block js-popup-block">
+                            <div class="item-tile-faq">
+                                <div class="tile-button js-btn-tgl-one active">Есть ли возможность оценить НейроМейкер попробовав бесплатно?</div>
+                                <div class="tile-content-block">
                                     <p>Вы можете воспользоваться бесплатным тестовым периодом на 10 дней с момента запуска проекта в панели с лимитом на 1 услугу/товар. Регистрация в панели не активирует автоматически тестовый период, только запуск проекта. </p>
                                 </div>
                             </div>
@@ -820,9 +881,9 @@
                         <!-- /item -->
                         <!-- item -->
                         <div class="col col-12">
-                            <div class="item-tile-faq js-popup-wrap no-close">
-                                <div class="tile-button js-btn-popup-toggle">Какие аналитические данные я могу получить в вашей панели?</div>
-                                <div class="tile-content-block js-popup-block">
+                            <div class="item-tile-faq">
+                                <div class="tile-button js-btn-tgl-one">Какие аналитические данные я могу получить в вашей панели?</div>
+                                <div class="tile-content-block">
                                     <p>Вы можете воспользоваться бесплатным тестовым периодом на 10 дней с момента запуска проекта в панели с лимитом на 1 услугу/товар. Регистрация в панели не активирует автоматически тестовый период, только запуск проекта. </p>
                                 </div>
                             </div>
@@ -830,9 +891,9 @@
                         <!-- /item -->
                         <!-- item -->
                         <div class="col col-12">
-                            <div class="item-tile-faq js-popup-wrap no-close">
-                                <div class="tile-button js-btn-popup-toggle">Какой формат и разрешение картинки товара для генерации видео?</div>
-                                <div class="tile-content-block js-popup-block">
+                            <div class="item-tile-faq">
+                                <div class="tile-button js-btn-tgl-one">Какой формат и разрешение картинки товара для генерации видео?</div>
+                                <div class="tile-content-block">
                                     <p>Вы можете воспользоваться бесплатным тестовым периодом на 10 дней с момента запуска проекта в панели с лимитом на 1 услугу/товар. Регистрация в панели не активирует автоматически тестовый период, только запуск проекта. </p>
                                 </div>
                             </div>
@@ -840,9 +901,9 @@
                         <!-- /item -->
                         <!-- item -->
                         <div class="col col-12">
-                            <div class="item-tile-faq js-popup-wrap no-close">
-                                <div class="tile-button js-btn-popup-toggle">Что нужно чтобы начать пользоваться НейроМейкер?</div>
-                                <div class="tile-content-block js-popup-block">
+                            <div class="item-tile-faq">
+                                <div class="tile-button js-btn-tgl-one">Что нужно чтобы начать пользоваться НейроМейкер?</div>
+                                <div class="tile-content-block">
                                     <p>Вы можете воспользоваться бесплатным тестовым периодом на 10 дней с момента запуска проекта в панели с лимитом на 1 услугу/товар. Регистрация в панели не активирует автоматически тестовый период, только запуск проекта. </p>
                                 </div>
                             </div>
@@ -850,7 +911,7 @@
                         <!-- /item -->
                     </div>
                     <div class="action-wrap">
-                        <a href="" class="btn button-medium button-dark">
+                        <a href="" class="btn button-medium button-dark js-popup-open" data-popup="popup-question">
                             <div class="button-title">Задайте свой вопрос</div>
                         </a>
                     </div>
@@ -949,6 +1010,395 @@
     </div>
     <!-- /wrap -->
 
+    <!--popup-outer-box-->
+    <div class="popup-outer-box" id="popup-integrate">
+        <div class="popup-box">
+            <a href="" class="btn-popup-close btn-action-ico ico-close-small js-popup-close"></a>
+            <div class="popup-title-wrap">
+                <div class="page-title">Интеграция</div>
+            </div>
+            <div class="popup-content-wrap">
+                <div class="tiles-popup-box">
+                    <div class="items-wrap">
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-video js-video" data-video="https://www.youtube.com/embed/ScMzIvxBSi4?controls=0">
+                                <div class="tile-bg">
+                                    <img src="./img/video.jpg" alt="" class="img-bg-cover">
+                                </div>
+                                <a href="" class="btn-action-ico ico-play-yt js-btn-video"></a>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-section-info">
+                                <a href="" class="tile-button btn-action-ico ico-copy"></a>
+                                <div class="tile-head-wrap">
+                                    <div class="tile-head">1 способ</div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-title page-subtitle">Установите этот <div class="btn button-tag">Iframe</div> <br>в нужном месте вашего сайта</div>
+                                    <div class="tile-code-wrap">
+                                        <code>
+                                            &lt;iframe src="https://mag.webuspex38.ru/share? apikey=IukHaLsSWEg7xd4JjioAdSDHRtvkhkyZ&amp;uuid=Qi3a1EppsogqE9t y" height="300" align="center"&gt;
+                                        </code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-section-info">
+                                <a href="" class="tile-button btn-action-ico ico-copy"></a>
+                                <div class="tile-head-wrap">
+                                    <div class="tile-head">2 способ</div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-title page-subtitle">Разместите <div class="btn button-tag">div</div> <br>в нужном месте вашего сайта</div>
+                                    <div class="tile-code-wrap">
+                                        <code>
+                                            &lt;div id="mag_video_Qi3aIEppsogqE9ty"&gt;&lt;/div&gt;
+                                        </code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-section-info">
+                                <a href="" class="tile-button btn-action-ico ico-copy"></a>
+                                <div class="tile-head-wrap">
+                                    <div class="tile-head">1 способ</div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-title page-subtitle">а код <div class="btn button-tag">js</div> <br>скрипта - в рамках тега head</div>
+                                    <div class="tile-code-wrap">
+                                        <code>
+                                            &gt;script src="https://mag.webuspex38.ru/share.js? apikey=IukHaLsSWEg7xd4JjioAdSDHRtvkhkyZ&uuid=Qi3a1EppsogqE9t"&gt;/script&gt;
+                                        </code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/popup-outer-box-->
+
+
+
+    <!--popup-outer-box-->
+    <div class="popup-outer-box popup-main" id="popup-login">
+        <div class="popup-box">
+            <a href="" class="btn-popup-close btn-action-ico ico-close-small js-popup-close"></a>
+            <div class="popup-title-wrap">
+                <div class="page-title">Вход в кабинет</div>
+            </div>
+            <div class="popup-content-wrap">
+                <form action="/" class="frm-popup">
+                    <div class="frm-row">
+                        <div class="frm-field">
+                            <div class="frm-field-input">
+                                <div class="field-input-title">Ваш e-mail</div>
+                                <div class="field-input-content">
+                                    <input type="text" class="form-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-row">
+                        <div class="frm-field">
+                            <div class="frm-field-input">
+                                <div class="field-input-title">Пароль</div>
+                                <div class="field-input-content">
+                                    <div class="frm-field-password">
+                                        <input type="password" class="form-input" value="">
+                                        <a href="" class="btn-action-ico ico-password-toggle button-password-toggle button-active-toggle js-password-toggle"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-row row-links">
+                        <div class="frm-field">
+                            <div class="frm-select">
+                                <input type="checkbox" id="popup01">
+                                <label for="popup01">Запомнить пароль</label>
+                            </div>
+                        </div>
+                        <div class="frm-field">
+                            <a href="" class="js-popup-open" data-popup="popup-login-password">Напомнить пароль</a>
+                        </div>
+                    </div>
+                    <div class="frm-row-submit">
+                        <div class="frm-field">
+                            <button type="submit" class="btn">
+                                <div class="button-title">Войти</div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="popup-login-box">
+                    <div class="login-title">Или войдите через</div>
+                    <div class="frm-row">
+                        <div class="frm-field">
+                            <a href="" class="btn-action-login">
+                                <img src="./img/icons/login01.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="frm-field">
+                            <a href="" class="btn-action-login">
+                                <img src="./img/icons/login02.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="frm-field">
+                            <a href="" class="btn-action-login">
+                                <img src="./img/icons/login03.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/popup-outer-box-->
+
+    <!--popup-outer-box-->
+    <div class="popup-outer-box popup-main" id="popup-login-password">
+        <div class="popup-box">
+            <a href="" class="btn-popup-close btn-action-ico ico-close-small js-popup-close"></a>
+            <div class="popup-title-wrap">
+                <div class="page-title">Напомнить пароль</div>
+            </div>
+            <div class="popup-content-wrap">
+                <form action="/" class="frm-popup">
+                    <div class="frm-row">
+                        <div class="frm-field">
+                            <div class="frm-field-input">
+                                <div class="field-input-title">Ваш e-mail</div>
+                                <div class="field-input-content">
+                                    <input type="text" class="form-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-row-submit">
+                        <div class="frm-field">
+                            <button type="submit" class="btn">
+                                <div class="button-title">Востановить пароль</div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!--/popup-outer-box-->
+
+    <!--popup-outer-box-->
+    <div class="popup-outer-box popup-main" id="popup-reg">
+        <div class="popup-box">
+            <a href="" class="btn-popup-close btn-action-ico ico-close-small js-popup-close"></a>
+            <div class="popup-title-wrap">
+                <div class="page-title">Вход в кабинет</div>
+            </div>
+            <div class="popup-content-wrap">
+                <form action="/" class="frm-popup">
+                    <div class="frm-row">
+                        <div class="frm-field">
+                            <div class="frm-field-input">
+                                <div class="field-input-title">Ваш e-mail</div>
+                                <div class="field-input-content">
+                                    <input type="text" class="form-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-row">
+                        <div class="frm-field">
+                            <div class="frm-field-input">
+                                <div class="field-input-title">Ваше имя</div>
+                                <div class="field-input-content">
+                                    <input type="text" class="form-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-row">
+                        <div class="frm-field">
+                            <div class="frm-field-input">
+                                <div class="field-input-title">Пароль</div>
+                                <div class="field-input-content">
+                                    <div class="frm-field-password">
+                                        <input type="password" class="form-input" value="">
+                                        <a href="" class="btn-action-ico ico-password-toggle button-password-toggle button-active-toggle js-password-toggle"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-row">
+                        <div class="frm-field">
+                            <div class="frm-field-input">
+                                <div class="field-input-title">повторите Пароль</div>
+                                <div class="field-input-content">
+                                    <div class="frm-field-password">
+                                        <input type="password" class="form-input" value="">
+                                        <a href="" class="btn-action-ico ico-password-toggle button-password-toggle button-active-toggle js-password-toggle"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-row-submit">
+                        <div class="frm-field">
+                            <button type="submit" class="btn">
+                                <div class="button-title">Зарегистрироваться</div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="popup-login-box">
+                    <div class="login-title">Или войдите через</div>
+                    <div class="frm-row">
+                        <div class="frm-field">
+                            <a href="" class="btn-action-login">
+                                <img src="./img/icons/login01.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="frm-field">
+                            <a href="" class="btn-action-login">
+                                <img src="./img/icons/login02.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="frm-field">
+                            <a href="" class="btn-action-login">
+                                <img src="./img/icons/login03.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/popup-outer-box-->
+
+
+    <!--popup-outer-box-->
+    <div class="popup-outer-box popup-main" id="popup-folder-create">
+        <div class="popup-box">
+            <a href="" class="btn-popup-close btn-action-ico ico-close-small js-popup-close"></a>
+            <div class="popup-title-wrap">
+                <div class="page-title">Новая папка</div>
+            </div>
+            <div class="popup-content-wrap">
+                <form action="/" class="frm-popup">
+                    <div class="frm-row">
+                        <div class="frm-field">
+                            <div class="frm-field-input">
+                                <div class="field-input-title">Название</div>
+                                <div class="field-input-content">
+                                    <input type="text" class="form-input" placeholder="Введите название">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-row-submit">
+                        <div class="frm-field field-half">
+                            <button type="submit" class="btn button-light">
+                                <div class="button-title">Отмена</div>
+                            </button>
+                        </div>
+                        <div class="frm-field field-half">
+                            <button type="submit" class="btn">
+                                <div class="button-title">Создать</div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!--/popup-outer-box-->
+
+
+
+    <!--popup-outer-box-->
+    <div class="popup-outer-box popup-main" id="popup-question">
+        <div class="popup-box">
+            <a href="" class="btn-popup-close btn-action-ico ico-close-small js-popup-close"></a>
+            <div class="popup-title-wrap">
+                <div class="page-title">Задать вопрос</div>
+            </div>
+            <div class="popup-content-wrap">
+                <form action="/" class="frm-popup">
+                    <div class="frm-row">
+                        <div class="frm-field">
+                            <div class="frm-field-input">
+                                <div class="field-input-title">Ваш Email</div>
+                                <div class="field-input-content">
+                                    <input type="email" class="form-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-field">
+                            <div class="frm-field-input">
+                                <div class="field-input-title">Ваш вопрос</div>
+                                <div class="field-input-content">
+                                    <textarea class="form-input" placeholder="Введите текст"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-row-submit">
+                        <div class="frm-field">
+                            <button type="submit" class="btn">
+                                <div class="button-title">Отправить</div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="frm-popup-succefull">
+                        <div class="frm-title">Ваш вопрос отправлен, ответ придет на указанный email</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!--/popup-outer-box-->
+
+    <!--popup-outer-box-->
+    <div class="popup-outer-box popup-main" id="popup-subscribe">
+        <div class="popup-box">
+            <a href="" class="btn-popup-close btn-action-ico ico-close-small js-popup-close"></a>
+            <div class="popup-title-wrap">
+                <div class="page-title">Подписаться на рассылку</div>
+            </div>
+            <div class="popup-content-wrap">
+                <form action="/" class="frm-popup">
+                    <div class="frm-row">
+                        <div class="frm-field">
+                            <div class="frm-field-input">
+                                <div class="field-input-title">Ваш Email</div>
+                                <div class="field-input-content">
+                                    <input type="email" class="form-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-row-submit">
+                        <div class="frm-field">
+                            <button type="submit" class="btn">
+                                <div class="button-title">Отправить</div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="frm-popup-succefull">
+                        <div class="frm-title">Вы успешно подписаны на рассылку</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!--/popup-outer-box-->
 
 
 </body>
