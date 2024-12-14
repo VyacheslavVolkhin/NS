@@ -394,4 +394,18 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 
 
+	//slider select
+	const swiperSliderSelect = new Swiper('.slider-select .swiper', {
+		loop: false,
+		slidesPerView: 'auto',
+		spaceBetween: 0,
+		autoHeight: true,
+		speed: 400,
+		pagination: false,
+		autoplay: false,
+		navigation: false,
+	
+	});
+
+
 })

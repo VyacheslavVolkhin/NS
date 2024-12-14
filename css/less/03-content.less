@@ -1,6 +1,24 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.wrap-main {
+	.btn.button-dark {
+		&:hover {
+			background-color: #005BFF;
+			border-color: #005BFF;
+		}
+	}
+}
+.slider-select-box {
+	.slider-wrap {
+		margin: 0 -10px;
+		overflow: visible;
+	}
+	.sl-wrap {
+		padding: 0 10px;
+		width: 260px;
+	}
+}
 .info-faq-box {
 	display: block;
 	position: relative;
@@ -923,6 +941,41 @@ body.popup-open {
 	
 }
 @media (min-width: 768px) {
+	.sections-box {
+		.frm-field-input {
+			z-index: 3;
+		}
+	}
+	.slider-select-box {
+		.slider-wrap {
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;	
+				top: 0;bottom: 0;right: 100%;
+				background: #fff;
+				width: 800px;
+				z-index: 2;
+			}
+		}
+		.swiper-slide {
+			opacity: 0;
+			transition: all ease 0.2s;
+			pointer-events: none;
+			&:has(+.swiper-slide-active) {
+				opacity: 1;
+				pointer-events: auto;
+			}
+			&.swiper-slide-active {
+				opacity: 1;
+				pointer-events: auto;
+				&~.swiper-slide {
+					opacity: 1;
+					pointer-events: auto;
+				}
+			}
+		}
+	}
 	.info-faq-box {
 		.box-inner-wrap {
 			padding: 16rem 0;
