@@ -3521,6 +3521,9 @@ html.with-fancybox body.hide-scrollbar {
 .page-title-box .actions-wrap .btn {
   height: 50px;
 }
+.page-title-box .actions-wrap .btn.button-border-att .button-ico {
+  filter: none;
+}
 .scroll-inner-wrap {
   padding-bottom: 16px;
   display: -ms-flexbox;
