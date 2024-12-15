@@ -2,6 +2,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+	//project right click menu
+	let tilesBox = document.querySelector('.tiles-box');
+	function addActiveClassToRightClick(event) {
+		if (!tilesBox.classList.contains('view-tiles') && window.innerWidth > 991) {
+			let buttonTiles = event.target.closest('.item-tile-project-main').querySelector('.tile-popup-menu-wrap .js-btn-popup-toggle');
+			buttonTiles.classList.add('active');
+		}
+	}
+	tilesBox.addEventListener('contextmenu', function(event) {
+		let buttonsTiles = document.querySelectorAll('.tile-btn-popup');
+		if (buttonsTiles) {
+			buttonsTiles.forEach(function(button) {
+				button.classList.remove('active');
+			});
+		}
+		addActiveClassToRightClick(event);
+	});
+	tilesBox.addEventListener('contextmenu', function(event) {
+		if (!tilesBox.classList.contains('view-tiles') && window.innerWidth > 991) {
+			event.preventDefault();
+		}
+	});
 	
 
 	//form sender
